@@ -22,7 +22,7 @@
     const $ = (sel, root) => (root || document).querySelector(sel);
     const ANCHOR = { hero: 'inicio', stats: 'numeros', lines: 'linhas', services: 'servicos', process: 'como-funciona', why: 'diferenciais', gallery: 'galeria', about: 'sobre', reviews: 'avaliacoes', faq: 'duvidas', location: 'localizacao', cta: 'orcamento' };
     const lines = (txt) => String(txt || '').split('\n').map(s => s.trim()).filter(Boolean);
-    const iconHtml = (cls, fallback) => `<i class="${esc(cls || fallback || 'fas fa-utensils')}" aria-hidden="true"></i>`;
+    const iconHtml = (cls, fallback) => `<i class="${esc(cls || fallback || 'fas fa-screwdriver-wrench')}" aria-hidden="true"></i>`;
     const bgStyle = (url) => url ? `style="background-image:url('${esc(url)}')"` : '';
 
     function sectionHead(o) {
@@ -64,7 +64,7 @@
         const btns = [
             wa && h.btnWa ? `<a href="${esc(wa)}" target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i><span>${esc(h.btnWa)}</span></a>` : '',
             maps && h.btnMaps ? `<a href="${esc(maps)}" target="_blank" rel="noopener" class="btn btn-outline"><i class="fas fa-location-dot"></i><span>${esc(h.btnMaps)}</span></a>` : '',
-            h.btn3Label && h.btn3Url ? `<a href="${esc(h.btn3Url)}" ${/^https?:/.test(h.btn3Url) ? 'target="_blank" rel="noopener"' : ''} class="btn btn-outline"><i class="fas fa-utensils"></i><span>${esc(h.btn3Label)}</span></a>` : ''
+            h.btn3Label && h.btn3Url ? `<a href="${esc(h.btn3Url)}" ${/^https?:/.test(h.btn3Url) ? 'target="_blank" rel="noopener"' : ''} class="btn btn-outline"><i class="fas fa-screwdriver-wrench"></i><span>${esc(h.btn3Label)}</span></a>` : ''
         ].join('');
         const chips = (h.chips || []).filter(c => c.text).map(c => `<li>${iconHtml(c.icon)}<span>${esc(c.text)}</span></li>`).join('');
         return `<section id="inicio" class="hero" ${bgStyle(h.bgImage)}>
