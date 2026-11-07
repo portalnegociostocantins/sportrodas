@@ -4,7 +4,7 @@ const defaultSiteData = {
     "_version": "2026-11-07T22:00:00.000Z",
     "seo": {
         "title": "Sport Rodas | Pneus, rodas, baterias e mecânica em Palmas - TO",
-        "description": "Sport Rodas Centro Automotivo: 25 anos em Palmas com pneus, rodas, calotas, baterias, alinhamento, balanceamento e mecânica em geral. Quadra 104 Sul.",
+        "description": "Sport Rodas Centro Automotivo: mais de 25 anos em Palmas com pneus, rodas, calotas, baterias, alinhamento, balanceamento e mecânica em geral. Quadra 104 Sul.",
         "siteUrl": ""
     },
     "brand": {
@@ -104,12 +104,12 @@ const defaultSiteData = {
         }
     ],
     "hero": {
-        "badge": "25 ANOS EM PALMAS",
+        "badge": "MAIS DE 25 ANOS EM PALMAS",
         "title": "Pneus, rodas, baterias e mecânica em geral com profissionais especializados",
-        "desc": "Há 25 anos cuidando do seu carro em Palmas. Oficina com elevadores para carros e camionetes e uma sala de espera climatizada para você aguardar com conforto.",
+        "desc": "Há mais de 25 anos cuidando do seu carro em Palmas. Oficina com elevadores para carros e camionetes e uma sala de espera climatizada para você aguardar com conforto.",
         "bgImage": "",
         "sideImage": "",
-        "emblemValue": "25",
+        "emblemValue": "25+",
         "emblemLabel": "anos de experiência em Palmas",
         "btnWa": "Pedir orçamento no WhatsApp",
         "btnMaps": "Como Chegar",
@@ -133,7 +133,7 @@ const defaultSiteData = {
     "stats": {
         "items": [
             {
-                "value": "25",
+                "value": "25+",
                 "label": "anos de mercado em Palmas"
             },
             {
@@ -283,7 +283,7 @@ const defaultSiteData = {
         "items": [
             {
                 "icon": "fas fa-award",
-                "title": "25 anos em Palmas",
+                "title": "Mais de 25 anos em Palmas",
                 "desc": "Tradição e confiança construídas na cidade."
             },
             {
@@ -311,14 +311,14 @@ const defaultSiteData = {
     },
     "about": {
         "subtitle": "QUEM SOMOS",
-        "title": "25 anos cuidando de pneus, rodas e do seu carro em Palmas",
-        "p1": "A Sport Rodas Centro Automotivo atua há 25 anos em Palmas com venda de pneus, rodas, calotas para rodas de ferro, calotinhas de centro de roda de alumínio ou liga leve e baterias, além de serviços de mecânica em geral, alinhamento e balanceamento.",
+        "title": "Mais de 25 anos cuidando de pneus, rodas e do seu carro em Palmas",
+        "p1": "A Sport Rodas Centro Automotivo atua há mais de 25 anos em Palmas com venda de pneus, rodas, calotas para rodas de ferro, calotinhas de centro de roda de alumínio ou liga leve e baterias, além de serviços de mecânica em geral, alinhamento e balanceamento.",
         "p2": "Nossa oficina conta com profissionais especializados e elevadores para carros e camionetes. Para o seu conforto, temos uma sala de espera ampla e climatizada, com TV, cafezinho e água gelada.",
         "image": "",
         "features": [
             {
                 "icon": "fas fa-award",
-                "text": "25 anos de experiência"
+                "text": "Mais de 25 anos de experiência"
             },
             {
                 "icon": "fas fa-user-gear",
@@ -390,7 +390,7 @@ const defaultSiteData = {
         "email": "5estrelasbaterias@gmail.com",
         "mapsUrl": "https://www.google.com/maps/place/Sport+Rodas+Centro+Automotivo+Pneus+e+Baterias/@-10.1896337,-48.3314531,17z/data=!3m1!4b1!4m6!3m5!1s0x9324cb5003c16335:0xbd96c121dbcdb73f!8m2!3d-10.189639!4d-48.3288782!16s%2Fg%2F11b6htvbsq?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D",
         "floatingWhatsapp": true,
-        "footerSub": "25 anos de tradição em Palmas - TO.",
+        "footerSub": "Mais de 25 anos de tradição em Palmas - TO.",
         "copyright": "Sport Rodas Centro Automotivo. Todos os direitos reservados.",
         "showAdminLink": true,
         "socials": [
