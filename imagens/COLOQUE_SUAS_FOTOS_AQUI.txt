@@ -1,0 +1,2 @@
+Fotos enviadas pelo painel admin são salvas aqui automaticamente ao publicar (.ZIP).
+Você também pode colocar arquivos manualmente (ex.: fachada.jpg) e informar no painel como imagens/fachada.jpg.

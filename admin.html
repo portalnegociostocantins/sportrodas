@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Painel Admin | Sport Rodas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <!-- JSZip: gera o .ZIP de publicação direto no navegador -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+
+    <!-- Login -->
+    <div id="auth" class="auth-wrap">
+        <form class="auth-box" id="auth-form" autocomplete="off">
+            <div class="auth-logo"><i class="fas fa-screwdriver-wrench"></i></div>
+            <h1>Painel Admin</h1>
+            <p>Sport Rodas<br>Digite a senha para editar o site.</p>
+            <input type="password" id="admin-password" class="in" placeholder="Senha do administrador" autofocus>
+            <button type="submit" class="btn-primary block" id="btn-login">Entrar no painel</button>
+            <p id="login-error" class="err" role="alert"></p>
+            <a href="index.html" class="link-back"><i class="fas fa-arrow-left"></i> Voltar ao site</a>
+        </form>
+    </div>
+
+    <!-- Painel -->
+    <div id="dash" hidden>
+        <header class="a-top">
+            <div class="a-brand"><i class="fas fa-screwdriver-wrench"></i><span>Sport Rodas <small>Editor do site</small></span></div>
+            <div class="a-status" id="save-status"><i class="fas fa-circle-check"></i> <span>Tudo em dia</span></div>
+            <div class="a-top-actions">
+                <button type="button" class="btn-ghost" id="btn-toggle-preview"><i class="fas fa-eye"></i> <span>Prévia</span></button>
+                <a href="index.html" target="_blank" class="btn-ghost"><i class="fas fa-arrow-up-right-from-square"></i> <span>Abrir site</span></a>
+                <button type="button" class="btn-publish" id="btn-publish"><i class="fas fa-file-zipper"></i> <span>Publicar (gerar .ZIP)</span></button>
+                <button type="button" class="btn-ghost danger" id="btn-logout" title="Sair"><i class="fas fa-right-from-bracket"></i></button>
+            </div>
+        </header>
+
+        <div class="a-layout">
+            <nav class="a-side" id="a-side" aria-label="Seções do painel"></nav>
+            <main class="a-main"><div id="a-form"></div></main>
+            <aside class="a-preview" id="a-preview" aria-label="Prévia do site">
+                <div class="pv-bar">
+                    <strong><i class="fas fa-eye"></i> Prévia ao vivo</strong>
+                    <div class="pv-devices">
+                        <button type="button" data-pv="desktop" class="active" title="Computador"><i class="fas fa-desktop"></i></button>
+                        <button type="button" data-pv="mobile" title="Celular"><i class="fas fa-mobile-screen"></i></button>
+                        <button type="button" id="pv-close" title="Fechar prévia"><i class="fas fa-xmark"></i></button>
+                    </div>
+                </div>
+                <div class="pv-stage"><iframe id="pv" title="Prévia do site" class="pv-frame"></iframe></div>
+            </aside>
+        </div>
+    </div>
+
+    <div id="modal" class="modal" hidden></div>
+    <datalist id="icon-list"></datalist>
+
+    <script src="dados.js"></script>
+    <script src="core.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
