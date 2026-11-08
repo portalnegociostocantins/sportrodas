@@ -425,6 +425,8 @@
         const el = $('#save-status');
         el.className = 'a-status ' + kind;
         el.innerHTML = `<i class="fas ${kind === 'ok' ? 'fa-circle-check' : 'fa-circle-exclamation'}"></i> <span>${esc(text)}</span>`;
+        const bm = $('#save-bar-msg');
+        if (bm) { bm.className = 'msg ' + kind; bm.innerHTML = `<i class="fas ${kind === 'ok' ? 'fa-circle-check' : 'fa-circle-exclamation'}"></i> <span>${kind === 'ok' ? esc(text) : 'Há alterações não salvas — clique em "Salvar alterações"'}</span>`; }
     }
 
     function touched() {
@@ -783,6 +785,11 @@
     });
 
     $('#btn-publish').addEventListener('click', publish);
+    $('#btn-save').addEventListener('click', async () => {
+        const b = $('#btn-save'); b.disabled = true;
+        clearTimeout(saveTimer); saveDraft(D); postPreview();
+        try { await publish(); } finally { b.disabled = false; }
+    });
     $('#btn-toggle-preview').addEventListener('click', () => document.body.classList.toggle('pv-open'));
     $('#pv-close').addEventListener('click', () => document.body.classList.remove('pv-open'));
     $$('[data-pv]').forEach(b => b.addEventListener('click', () => {
